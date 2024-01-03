@@ -19,7 +19,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 //@EnableAutoConfiguration( exclude=[MongoAutoConfiguration::class] )
-@EnableMongoRepositories
+//@EnableMongoRepositories
 class Application
 fun main(args: Array<String>) {
 

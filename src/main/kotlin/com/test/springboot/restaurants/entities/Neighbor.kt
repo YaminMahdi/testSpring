@@ -2,9 +2,10 @@ package com.test.springboot.restaurants.entities
 
 import org.bson.codecs.pojo.annotations.BsonProperty
 import org.bson.types.ObjectId
+import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 
-@Document("neighborhoods")
+@Document(collection = "neighborhoods")
 data class Neighbor(
     val _id: ObjectId,
     @BsonProperty("geometry") val geometry: Geometry,
